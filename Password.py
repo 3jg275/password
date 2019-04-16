@@ -7,6 +7,9 @@ while x > 0:
         break #stop asking
     else:
         x = x - 1
-        print('wrong pass word! You still got ', x, "chances")
-        
+        if x > 0:
+            print('wrong pass word! You still got ', x, "chances")
+        else:
+            print('Unavailable, Account suspended.')
+
 
